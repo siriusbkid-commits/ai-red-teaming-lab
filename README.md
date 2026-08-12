@@ -48,3 +48,8 @@ ai-red-teaming-lab/
 
 └── README.md                # Project documentation \& vulnerability report
 
+---
+
+## 🙏 Acknowledgements & Attribution
+
+This lab implementation is based on the AI Red-Teaming Lab guide from [Taimur Ijlal's AI Security Projects repository](https://github.com/taimurijlal/AI-Security-Projects/tree/main/01-ai-red-teaming-lab).
