@@ -19,34 +19,7 @@ Unlike traditional software testing (which checks if a system crashes), **AI Red
 
 ---
 
-## 🏗️ How the Lab Works (Architecture Overview)
 
-Red-teaming requires two separate sides: a **Target (The Victim App)** and **Attack Tools (The Probes & Scanners)**.
-
-\`\`\`text
-  ┌─────────────────────────────────────────────────────────┐
-  │                 ATTACK TOOL SUITE                       │
-  │                                                         │
-  │  ┌───────────────────┐        ┌──────────────────────┐  │
-  │  │  simple_test.py   │        │   garak / PyRIT      │  │
-  │  │ (Custom Python)   │        │  (Automated Framework)│ │
-  │  └─────────┬─────────┘        └──────────┬───────────┘  │
-  └────────────┼─────────────────────────────┼──────────────┘
-               │ HTTP POST /chat             │ Direct Calls
-               ▼                             ▼
-  ┌─────────────────────────────────────────────────────────┐
-  │                 TARGET APPLICATION                      │
-  │                                                         │
-  │                    ┌──────────────┐                     │
-  │                    │ app/main.py  │                     │
-  │                    │ (FastAPI App)│                     │
-  │                    └──────┬───────┘                     │
-  │                           │                             │
-  │                    ┌──────▼───────┐                     │
-  │                    │  LLM Engine  │                     │
-  │                    └──────────────┘                     │
-  └─────────────────────────────────────────────────────────┘
-\`\`\`
 <img width="1408" height="768" alt="Gemini_Generated_Image_a1edcxa1edcxa1ed" src="https://github.com/user-attachments/assets/82c58970-c356-4412-badd-786d5fe5bb26" />
 
 * **The Target (\`app/main.py\`)** runs locally on \`http://localhost:8000/chat\`. It receives user questions and passes them to the LLM backend.
