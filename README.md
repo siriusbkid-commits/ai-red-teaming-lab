@@ -1,4 +1,4 @@
-Set-Content -Path "README.md" -Value @"
+
 # 🛡️ AI Red-Teaming & Security Evaluation Lab
 
 An interactive, beginner-friendly lab for benchmarking, probing, and evaluating Large Language Model (LLM) endpoints against prompt injection, system prompt extraction, and adversarial inputs using **PyRIT**, **garak**, and custom Python probe suites.
@@ -19,7 +19,8 @@ Unlike traditional software testing (which checks if a system crashes), **AI Red
 
 ---
 
-
+<img width="1408" height="768" alt="assetsarchitecture-diagram" src="https://github.com/user-attachments/assets/f2d8a38c-2030-4366-8cc0-0fb1d15097b4" />
+Set-Content -Path "README.md" -Value @"
 
 
 * **The Target (\`app/main.py\`)** runs locally on \`http://localhost:8000/chat\`. It receives user questions and passes them to the LLM backend.
