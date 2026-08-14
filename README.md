@@ -20,7 +20,7 @@ Unlike traditional software testing (which checks if a system crashes), **AI Red
 ---
 
 <img width="1408" height="768" alt="assetsarchitecture-diagram" src="https://github.com/user-attachments/assets/f2d8a38c-2030-4366-8cc0-0fb1d15097b4" />
-Set-Content -Path "README.md" -Value @"
+
 
 
 * **The Target (\`app/main.py\`)** runs locally on \`http://localhost:8000/chat\`. It receives user questions and passes them to the LLM backend.
